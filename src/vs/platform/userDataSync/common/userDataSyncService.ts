@@ -158,7 +158,7 @@ export class UserDataSyncService extends Disposable implements IUserDataSyncServ
 		if (synchroniser instanceof ExtensionsSynchroniser) {
 			return SyncSource.Extensions;
 		}
-		return SyncSource.UIState
+		return SyncSource.UIState;
 	}
 
 	private onDidChangeAuthTokenStatus(token: string | undefined): void {
